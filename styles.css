@@ -12,6 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(135deg, #6a11cb, #2575fc);
+    overflow: hidden; /* Prevent scrolling */
 }
 
 /* Container for the form */
@@ -19,9 +20,16 @@ body {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 350px; /* Fixed width for better consistency */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* Form container */
@@ -33,18 +41,26 @@ body {
     margin-bottom: 20px;
     color: white;
     font-size: 2rem;
+    text-transform: uppercase; /* Added for a sporty feel */
+    letter-spacing: 1px; /* Improved readability */
 }
 
 /* Form inputs and button */
 .form input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px; /* Slightly rounded corners */
     background: rgba(255, 255, 255, 0.2);
     color: white;
     font-size: 1rem;
+    outline: none; /* Remove default outline */
+    transition: background 0.3s ease;
+}
+
+.form input:focus {
+    background: rgba(255, 255, 255, 0.3); /* Highlight on focus */
 }
 
 .form input::placeholder {
@@ -53,30 +69,34 @@ body {
 
 .form button {
     width: 100%;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 12px;
+    margin-top: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px; /* Consistent with input fields */
     background: #ff6b6b;
     color: white;
     font-size: 1rem;
+    font-weight: bold; /* Added for emphasis */
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .form button:hover {
     background: #ff4757;
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 /* Link to registration page */
 .form-container p {
     margin-top: 15px;
     color: white;
+    font-size: 0.9rem; /* Slightly smaller for subtlety */
 }
 
 .form-container a {
     color: #ff6b6b;
     text-decoration: none;
+    font-weight: bold; /* Added for emphasis */
     transition: color 0.3s ease;
 }
 
