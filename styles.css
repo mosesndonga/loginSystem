@@ -1,0 +1,85 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Container for the form */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Form container */
+.form-container {
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Form inputs and button */
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+}
+
+.form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6b6b;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form button:hover {
+    background: #ff4757;
+}
+
+/* Link to registration page */
+.form-container p {
+    margin-top: 15px;
+    color: white;
+}
+
+.form-container a {
+    color: #ff6b6b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-container a:hover {
+    color: #ff4757;
+}
